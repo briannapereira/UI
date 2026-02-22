@@ -1,0 +1,342 @@
+/* =========================
+   GreenTech Solutions Styles
+   External stylesheet required by assignment
+========================= */
+
+/* ---- CSS Reset-ish ---- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;              /* deep gray */
+  background: #f7faf7;         /* soft green-tinted white */
+}
+
+/* ---- Reusable Layout ---- */
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+/* =========================
+   Header
+========================= */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 0;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.company-name {
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: #0f3d2e; /* dark green */
+  font-size: clamp(1.5rem, 2.2vw, 2.1rem);
+}
+
+.tagline {
+  margin: 4px 0 0;
+  color: #4b5563;
+  font-size: 0.98rem;
+}
+
+/* =========================
+   Sticky Navigation
+========================= */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #0f3d2e;  /* dark green */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-inner {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  background: rgba(255, 255, 255, 0.14);
+  outline: none;
+}
+
+/* =========================
+   Hero / Primary Section
+========================= */
+.hero {
+  padding: 34px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 22px;
+  align-items: center;
+}
+
+.hero-text h2 {
+  margin: 0 0 10px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  color: #0f3d2e;
+}
+
+.lead {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+  color: #374151;
+}
+
+.hero-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Small “pill” highlights */
+.hero-badges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.badge {
+  background: #e7f6ee;
+  color: #0f3d2e;
+  border: 1px solid #bfe6cf;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+/* =========================
+   Sections
+========================= */
+.section {
+  padding: 32px 0;
+}
+
+.section-alt {
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.section h2 {
+  margin: 0 0 10px;
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #0f3d2e;
+  font-size: 1.6rem;
+}
+
+.section-subtitle {
+  margin: 0 0 18px;
+  color: #4b5563;
+}
+
+/* Services list */
+.service-list {
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+.service-list li {
+  margin: 10px 0;
+}
+
+/* =========================
+   Product Cards
+========================= */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: #f8fbf9;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 16px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.card h3 {
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #0f3d2e;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0;
+  color: #374151;
+}
+
+/* CTA Button */
+.btn {
+  display: inline-block;
+  margin-top: auto; /* pushes button to bottom for equal-height cards */
+  text-decoration: none;
+  text-align: center;
+  background: #22c55e;      /* bright green for contrast */
+  color: #0b1f16;
+  font-weight: 700;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: #16a34a;
+  color: #ffffff;
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+/* =========================
+   Footer
+========================= */
+.site-footer {
+  background: #0f3d2e;
+  color: #ecfdf5;
+  padding: 26px 0 14px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.footer-title {
+  margin: 0 0 10px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.1rem;
+  color: #ecfdf5;
+}
+
+.site-footer p {
+  margin: 6px 0;
+  color: rgba(236, 253, 245, 0.92);
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.social img {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  margin-top: 18px;
+  padding-top: 12px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgba(236, 253, 245, 0.9);
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+  .nav-inner {
+    gap: 6px;
+  }
+
+  .nav-link {
+    padding: 8px 10px;
+    font-size: 0.92rem;
+  }
+
+  .header-inner {
+    align-items: flex-start;
+  }
+}
