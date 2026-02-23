@@ -1,9 +1,6 @@
-/* =========================
-   GreenTech Solutions Styles
-   External stylesheet required by assignment
-========================= */
+/* Style Sheet */
 
-/* ---- CSS Reset-ish ---- */
+/* Border */
 * {
   box-sizing: border-box;
 }
@@ -16,22 +13,20 @@ body {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
   line-height: 1.6;
-  color: #1f2937;              /* deep gray */
-  background: #f7faf7;         /* soft green-tinted white */
+  color: #1f2937;              
+  background: #f7faf7;         
 }
 
-/* ---- Reusable Layout ---- */
+/* Layout*/
 .container {
   width: min(1100px, 92%);
   margin: 0 auto;
 }
 
-/* =========================
-   Header
-========================= */
+/* Header */
 .site-header {
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+  background: #0f3d2e;
+  border-bottom: 1px solid #22C55E;
 }
 
 .header-inner {
@@ -42,35 +37,34 @@ body {
 }
 
 .logo {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   border-radius: 12px;
   object-fit: cover;
 }
 
 .company-name {
   margin: 0;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-weight: 700;
   letter-spacing: 0.2px;
-  color: #0f3d2e; /* dark green */
+  color:#ffffff;
+  /*color: #0f3d2e;*/
   font-size: clamp(1.5rem, 2.2vw, 2.1rem);
 }
 
 .tagline {
   margin: 4px 0 0;
-  color: #4b5563;
+  color: #22C55E;
   font-size: 0.98rem;
 }
 
-/* =========================
-   Sticky Navigation
-========================= */
+/* Sticky Navigation */
 .site-nav {
   position: sticky;
   top: 0;
   z-index: 999;
-  background: #0f3d2e;  /* dark green */
+  background: #0f3d2e; 
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -96,9 +90,7 @@ body {
   outline: none;
 }
 
-/* =========================
-   Hero / Primary Section
-========================= */
+/* Primary Section */
 .hero {
   padding: 34px 0;
 }
@@ -112,7 +104,7 @@ body {
 
 .hero-text h2 {
   margin: 0 0 10px;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: clamp(1.6rem, 2.6vw, 2.2rem);
   color: #0f3d2e;
 }
@@ -131,7 +123,7 @@ body {
   border: 1px solid #e5e7eb;
 }
 
-/* Small “pill” highlights */
+/* Highlights */
 .hero-badges {
   display: flex;
   gap: 10px;
@@ -149,9 +141,7 @@ body {
   font-weight: 600;
 }
 
-/* =========================
-   Sections
-========================= */
+/*  Sections */
 .section {
   padding: 32px 0;
 }
@@ -164,7 +154,7 @@ body {
 
 .section h2 {
   margin: 0 0 10px;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: #0f3d2e;
   font-size: 1.6rem;
 }
@@ -184,9 +174,7 @@ body {
   margin: 10px 0;
 }
 
-/* =========================
-   Product Cards
-========================= */
+/* Product Cards */
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -202,7 +190,7 @@ body {
   flex-direction: column;
 }
 
-.card img {
+.card-img {
   width: 100%;
   height: auto;
   display: block;
@@ -220,7 +208,7 @@ body {
 
 .card h3 {
   margin: 0;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: #0f3d2e;
   font-size: 1.2rem;
 }
@@ -233,10 +221,10 @@ body {
 /* CTA Button */
 .btn {
   display: inline-block;
-  margin-top: auto; /* pushes button to bottom for equal-height cards */
+  margin-top: auto; 
   text-decoration: none;
   text-align: center;
-  background: #22c55e;      /* bright green for contrast */
+  background: #22C55E;     
   color: #0b1f16;
   font-weight: 700;
   padding: 10px 14px;
@@ -246,15 +234,13 @@ body {
 
 .btn:hover,
 .btn:focus-visible {
-  background: #16a34a;
+  background: #61a77b;
   color: #ffffff;
   outline: none;
   border-color: rgba(255, 255, 255, 0.35);
 }
 
-/* =========================
-   Footer
-========================= */
+/* Footer */
 .site-footer {
   background: #0f3d2e;
   color: #ecfdf5;
@@ -270,7 +256,7 @@ body {
 
 .footer-title {
   margin: 0 0 10px;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 1.1rem;
   color: #ecfdf5;
 }
@@ -306,9 +292,7 @@ body {
   color: rgba(236, 253, 245, 0.9);
 }
 
-/* =========================
-   Responsive Design
-========================= */
+/* Response */
 
 /* Tablet */
 @media (max-width: 900px) {
