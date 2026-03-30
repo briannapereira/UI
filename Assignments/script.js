@@ -122,7 +122,7 @@ if (footerCopy) {
 }
 
 //Assignment 4: API Connect
-//products from database
+//Products from database
 async function fetchAndRenderProducts() {
   try {
     const response = await fetch('/api/products');
@@ -180,7 +180,7 @@ async function fetchAndRenderProducts() {
   }
 }
 
-//company info from database
+//Company info from database
 async function fetchCompanyInfo() {
   try {
     const response = await fetch('/api/company');
@@ -190,7 +190,7 @@ async function fetchCompanyInfo() {
     const aboutP = document.querySelector('#about p');
     if (aboutP && company.mission) aboutP.textContent = company.mission;
 
-    // Update footer contact info from DB
+    //Footer contact info from DB
     const emailEl   = document.querySelector('.site-footer [aria-label="Contact information"] p:nth-child(2)');
     const phoneEl   = document.querySelector('.site-footer [aria-label="Contact information"] p:nth-child(3)');
     const addressEl = document.querySelector('.site-footer [aria-label="Contact information"] p:nth-child(4)');
